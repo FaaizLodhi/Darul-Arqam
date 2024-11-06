@@ -863,3 +863,33 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
 }
 
 }
+
+
+/* Arrow button styling */
+.scroll-btn {
+  position: absolute;
+  transform: translateY(200px);
+  color: #fff;
+  border: none;
+  padding: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+/* Positioning for left and right arrows */
+.scroll-left {
+  left: 5px;
+}
+
+.scroll-right {
+  right: 5px;
+}
+
+/* Show arrows only on mobile screens */
+@media (max-width: 768px) {
+  .scroll-btn {
+    display: block;
+  }
+}

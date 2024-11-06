@@ -159,6 +159,14 @@
 
 <div class="container text-center my-5 pillars-image-container">
   <h2 class="pillars-title">PILLARS OF ISLAM</h2>
+  <button class="scroll-btn scroll-left" onclick="scrollToLeft()">
+    <img src="./media/left-chevron.png" alt="Scroll Left" class="arrow-icon" style="width:25px">
+  </button>
+  <button class="scroll-btn scroll-right" onclick="scrollToRight()">
+    <img src="./media/chevron.png" alt="Scroll Right" class="arrow-icon" style="width:25px">
+  </button>
+
+  
   <div class="row  pillars-image-subContainer">
     <!-- Pillar Card 1 -->
     <div class="col-lg-2 col-md-4 col-sm-6 pillars-card">
@@ -454,6 +462,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 </script>
+
+<script>
+  // Scroll left function
+  function scrollToLeft() {
+    document.querySelector('.pillars-image-subContainer').scrollBy({
+      left: -200,
+      behavior: 'smooth'
+    });
+  }
+
+  // Scroll right function
+  function scrollToRight() {
+    document.querySelector('.pillars-image-subContainer').scrollBy({
+      left: 200,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+
 
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
