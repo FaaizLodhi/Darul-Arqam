@@ -402,6 +402,9 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
       margin-top: 0px;
       margin-right: 10px;
     }
+
+   
+
 .play-button{
   transform: translate(-58px, 2px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -729,7 +732,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
 .support-card {
   max-width: 238px;
   width: 71%;
-  right: 75px;
+  right: 15%;
   height: 246px;
 }
 .donation-text {
@@ -795,6 +798,13 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
 
 /* Scrollable row styling for screens below 768px */
 @media (max-width: 768px) {
+
+  .btn-container{
+    display: flex;
+    align-items: center;
+}
+
+
    .pillars-image-subContainer {
       display: flex;
       flex-wrap: nowrap;
@@ -836,10 +846,20 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), /* Outer shadow */
   align-items: center;
   padding: 10px 20px 10px 40px;
   border-radius: 50px;
-  font-size: 0.9rem;
+  font-size: 12px;
   font-weight: bold;
   color: white;
   margin-top: 0px;
   margin-left: 10px;
 }
+
+.btn-question {
+ 
+  font-size: 12px;
+  margin-top: 0;
+}
+.offer-card{
+  margin-top:20px;
+}
+
 }
